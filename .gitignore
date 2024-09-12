@@ -1,0 +1,8 @@
+*.vsdx
+*.suo
+*.ipch
+*.pdb
+*.log
+*.db
+*.obj
+Debug/
