@@ -13,7 +13,7 @@ private:
 		Echelon, //20-50 people
 		Company //100-250 
 	};
-	UnitType m_unitType = determineUnit();
+	UnitType m_unitType;
 public:
 	void setSoldiers(std::vector<int>& _soldiers);
 	std::vector<int> getSoldiers();

@@ -52,11 +52,9 @@ std::string Unit::getUnitTypeName(UnitType _unitType)
 Unit::Unit(std::vector<int>& _soldiers)
 {
 	m_soldiers = _soldiers;
+	m_unitType = determineUnit();
 }
 
-Unit::Unit()
-{
-}
 
 std::string Unit::toString()
 {
