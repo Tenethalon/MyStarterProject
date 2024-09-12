@@ -6,6 +6,7 @@
 
 int main() 
 {
-	Unit* unit1ptr = new Unit();
-	unit1ptr->setSoldiers(30, 1);
+	std::vector<int> Soldiers1(30, 1);
+	Unit myUnit(Soldiers1);
+	std::cout << myUnit.toString();
 }
