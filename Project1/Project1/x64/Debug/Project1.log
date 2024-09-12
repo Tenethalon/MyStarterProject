@@ -1,0 +1,25 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,27): error C2665: 'Unit::Unit': no overloaded function could convert all the argument types
+      C:\Users\USER\source\repos\Project1\Project1\Unit.h(25,1):
+      could be 'Unit::Unit(Unit &&)'
+          C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,27):
+          'Unit::Unit(Unit &&)': cannot convert argument 1 from 'int' to 'Unit &&'
+              C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,28):
+              Reason: cannot convert from 'int' to 'Unit'
+      C:\Users\USER\source\repos\Project1\Project1\Unit.h(25,1):
+      or       'Unit::Unit(const Unit &)'
+          C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,27):
+          'Unit::Unit(const Unit &)': cannot convert argument 1 from 'int' to 'const Unit &'
+              C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,28):
+              Reason: cannot convert from 'int' to 'const Unit'
+      C:\Users\USER\source\repos\Project1\Project1\Unit.h(22,2):
+      or       'Unit::Unit(std::vector<int,std::allocator<int>> &)'
+          C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,27):
+          'Unit::Unit(std::vector<int,std::allocator<int>> &)': cannot convert argument 1 from 'int' to 'std::vector<int,std::allocator<int>> &'
+      C:\Users\USER\source\repos\Project1\Project1\main.cpp(9,27):
+      while trying to match the argument list '(int)'
+  
+  Unit.cpp
+  Generating Code...
+C:\Users\USER\source\repos\Project1\Project1\Unit.cpp(61,1): error C4716: 'Unit::toString': must return a value
+C:\Users\USER\source\repos\Project1\Project1\Unit.cpp(32,1): warning C4715: 'Unit::determineUnit': not all control paths return a value
