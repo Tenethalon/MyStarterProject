@@ -1,13 +1,18 @@
 #include "Unit.h"
 
-void Unit::setSoldiers(std::vector<int>& _soldiers)
+ void Unit::setSoldiers(int _soldiers)
 {
-	m_soldiers = _soldiers;
+	m_soldiers.resize(_soldiers, 0);
 }
 
-std::vector<int> Unit::getSoldiers()
+std::vector<int> Unit::getSoldiersFull()
 {
 	return m_soldiers;
+}
+
+int Unit::getSoldiersCount()
+{
+	return m_soldiers.size();
 }
 
 
