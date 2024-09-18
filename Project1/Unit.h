@@ -3,10 +3,12 @@
 #include <vector>
 #include <iostream>
 #include <utility>
+#include "Commander.h"
 class Unit
 {
 private:
 	std::vector<int> m_soldiers;
+	int m_soldiersCount;
 	enum class UnitType {
 		Squad, //6-12 people
 		Platoon, //12-24 people
@@ -14,14 +16,19 @@ private:
 		Company //100-250 
 	};
 	UnitType m_unitType;
+	Commander* m_commander_ptr = nullptr;
+	
 public:
 	void setSoldiers(std::vector<int>& _soldiers);
 	std::vector<int> getSoldiers();
 	UnitType determineUnit();
 	std::string getUnitTypeName(UnitType _unitType);
-	Unit(std::vector<int>& _soldiers);
+	Unit(int _soldiers);
 	Unit();
+	~Unit();
 	std::string toString();
+	void setCommander(Commander* _commander);
+	void removeCommander();
 
 };
 

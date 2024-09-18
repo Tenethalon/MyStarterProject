@@ -1,12 +1,15 @@
-// 1. Создати підрозділ та описати його.
-// 1.1 Підрозділ містить людей
-// 1.2 Підрозділ містить командира
 
 #include "Unit.h"
-
+#include "Commander.h"
 int main() 
 {
-	std::vector<int> Soldiers1(30, 1);
-	Unit myUnit(Soldiers1);
-	std::cout << myUnit.toString();
+	Commander* commander = new Commander();
+	commander->setCommander(Commander::Rank::Captain);
+	std::cout << std::to_string(static_cast<int>(commander->getCommander())) << std::endl;
+	Unit* unit1 = new Unit(12);
+	std::cout << unit1->toString() << std::endl;;
+	unit1->setCommander(commander);
+	std::cout << unit1->toString() << std::endl;
+	delete unit1;
+	delete commander;
 }
