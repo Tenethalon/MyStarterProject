@@ -3,10 +3,10 @@
 Squad::Squad(int _soldiers) :
 	Unit(_soldiers)
 {
-	std::cout << "Squad with " << Unit::getSoldiersCount() << " soldiers was created." << std::endl;
+	std::cout << "Squad with " << _soldiers << "soldiers was created." << std::endl;
 }
 
 Squad::~Squad()
 {
-	std::cout << "Squad was deleted";
+	std::cout << "Squad was deleted." << std::endl;
 }

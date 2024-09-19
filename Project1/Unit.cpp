@@ -88,7 +88,7 @@ std::string Unit::toString()
 void Unit::setCommander(Commander* _commander)
 {
 	m_commander_ptr = _commander;
-	m_soldiers.push_back(0); 
+	//m_soldiers.push_back(0); 
 	determineUnit();
 	//m_unitType = determineUnit();
 }
@@ -96,8 +96,28 @@ void Unit::setCommander(Commander* _commander)
 void Unit::removeCommander()
 {
 	m_commander_ptr = nullptr;
-	m_soldiers.pop_back();
+	//m_soldiers.pop_back();
 	determineUnit();
 	//m_unitType = determineUnit();
+}
+
+Unit* Unit::createUnit(int _soldiers)
+{
+	if (_soldiers >= 6 && _soldiers <= 12)
+	{
+		return new Squad(_soldiers);
+	}
+	else if (_soldiers >= 13 && _soldiers <= 24)
+	{
+		return new Platoon(_soldiers);
+	}
+	else if (_soldiers >= 25 && _soldiers <= 50)
+	{
+		return new Echelon(_soldiers);
+	}
+	else if (_soldiers >= 51 && _soldiers <= 250)
+	{
+		return new Company(_soldiers);
+	}
 }
 

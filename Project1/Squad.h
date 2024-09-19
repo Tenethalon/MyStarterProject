@@ -7,5 +7,3 @@ public:
 	~Squad();
 };
 
-
-

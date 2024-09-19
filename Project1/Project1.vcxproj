@@ -128,12 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Commander.cpp" />
+    <ClCompile Include="Company.cpp" />
+    <ClCompile Include="Echelon.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Platoon.cpp" />
     <ClCompile Include="Squad.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commander.h" />
+    <ClInclude Include="Company.h" />
+    <ClInclude Include="Echelon.h" />
+    <ClInclude Include="Platoon.h" />
     <ClInclude Include="Squad.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>

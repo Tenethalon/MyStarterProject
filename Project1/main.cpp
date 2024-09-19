@@ -3,6 +3,7 @@
 #include "Commander.h"
 int main() 
 {
-	Squad* squad1 = new Squad(10);
-	delete squad1;
+	Squad* squad_ptr = new Squad(14);
+	std::cout << squad_ptr->toString();
+	delete squad_ptr;
 }

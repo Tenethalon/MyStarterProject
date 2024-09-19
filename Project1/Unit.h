@@ -4,6 +4,10 @@
 #include <iostream>
 #include <utility>
 #include "Commander.h"
+#include "Squad.h"
+#include "Platoon.h"
+#include "Echelon.h"
+#include "Company.h"
 class Unit
 {
 public:
@@ -32,6 +36,6 @@ public:
 	std::string toString();
 	void setCommander(Commander* _commander);
 	void removeCommander();
-
+	static Unit* createUnit(int _soldiers);
 };
 
