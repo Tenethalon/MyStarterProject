@@ -7,5 +7,5 @@
 
 class ICreateUnit {                                     // I DONT UNDERSTANT THIS GAMNO YOBANOE POMOGI VLAD
 public:
-    static Unit* createUnit(int soldiersCount);
+    Unit* createUnit(int _soldiers);
 };

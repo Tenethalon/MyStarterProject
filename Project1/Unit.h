@@ -9,8 +9,7 @@
 #include "Echelon.h"
 #include "Company.h"
 #include "ICreateUnit.h"
-
-class Unit 
+class Unit
 {
 public:
 	enum class UnitType {

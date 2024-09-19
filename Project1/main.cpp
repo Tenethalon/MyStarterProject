@@ -3,7 +3,7 @@
 #include "Commander.h"
 int main() 
 {
-	Unit* unit_ptr = Unit::createUnit(30);
+	Unit* unit_ptr = ICreateUnit::createUnit(20);
 	std::cout << unit_ptr->toString();
 	delete unit_ptr;
 }
