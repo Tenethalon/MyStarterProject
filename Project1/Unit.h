@@ -8,7 +8,9 @@
 #include "Platoon.h"
 #include "Echelon.h"
 #include "Company.h"
-class Unit
+#include "ICreateUnit.h"
+
+class Unit 
 {
 public:
 	enum class UnitType {
@@ -32,10 +34,10 @@ public:
 	virtual std::string getUnitTypeName(UnitType _unitType);
 	Unit(int _soldiers);
 	Unit();
-	~Unit();
+	virtual  ~Unit();
 	std::string toString();
 	void setCommander(Commander* _commander);
 	void removeCommander();
-	static Unit* createUnit(int _soldiers);
+	
 };
 

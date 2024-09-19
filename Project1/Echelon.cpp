@@ -1,7 +1,6 @@
 #include "Echelon.h"
 
-Echelon::Echelon(int _soldiers):
-	Unit(_soldiers)
+Echelon::Echelon(int _soldiers):Unit(_soldiers)
 {
 	std::cout << "Echelon with " << _soldiers << "soldiers was created." << std::endl;
 }

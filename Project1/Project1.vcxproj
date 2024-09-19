@@ -139,6 +139,7 @@
     <ClInclude Include="Commander.h" />
     <ClInclude Include="Company.h" />
     <ClInclude Include="Echelon.h" />
+    <ClInclude Include="ICreateUnit.h" />
     <ClInclude Include="Platoon.h" />
     <ClInclude Include="Squad.h" />
     <ClInclude Include="Unit.h" />

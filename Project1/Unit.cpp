@@ -1,4 +1,5 @@
 #include "Unit.h"
+#include "ICreateUnit.h"
 
  void Unit::setSoldiers(int _soldiers)
 {
@@ -56,7 +57,7 @@ std::string Unit::getUnitTypeName(UnitType _unitType)
 
 Unit::Unit(int _soldiers)
 {
-	m_soldiers.resize(_soldiers, 0);
+	m_soldiers = std::vector<int>(_soldiers, 0);
 
 	//m_unitType = determineUnit();
 	determineUnit();
@@ -89,7 +90,7 @@ void Unit::setCommander(Commander* _commander)
 {
 	m_commander_ptr = _commander;
 	//m_soldiers.push_back(0); 
-	determineUnit();
+	//determineUnit();
 	//m_unitType = determineUnit();
 }
 
@@ -97,11 +98,11 @@ void Unit::removeCommander()
 {
 	m_commander_ptr = nullptr;
 	//m_soldiers.pop_back();
-	determineUnit();
+	//determineUnit();
 	//m_unitType = determineUnit();
 }
 
-Unit* Unit::createUnit(int _soldiers)
+Unit* ICreateUnit::createUnit(int _soldiers)                          // ÏÎÌÎÃÈ ß ÍÅ ÏÀÍÈÌÀÞ ªÒÀ ÃÀÌÍÎ ¯ÁÀÍÅ
 {
 	if (_soldiers >= 6 && _soldiers <= 12)
 	{
@@ -118,6 +119,10 @@ Unit* Unit::createUnit(int _soldiers)
 	else if (_soldiers >= 51 && _soldiers <= 250)
 	{
 		return new Company(_soldiers);
+	}
+	else
+	{
+		std::cout << "Invalid number of soldiers";
 	}
 }
 

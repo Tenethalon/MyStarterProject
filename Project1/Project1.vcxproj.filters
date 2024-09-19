@@ -56,5 +56,8 @@
     <ClInclude Include="Company.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ICreateUnit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

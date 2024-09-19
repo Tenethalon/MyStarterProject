@@ -3,7 +3,7 @@
 #include "Commander.h"
 int main() 
 {
-	Squad* squad_ptr = new Squad(14);
-	std::cout << squad_ptr->toString();
-	delete squad_ptr;
+	Unit* unit_ptr = Unit::createUnit(30);
+	std::cout << unit_ptr->toString();
+	delete unit_ptr;
 }
