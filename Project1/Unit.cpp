@@ -102,7 +102,7 @@ void Unit::removeCommander()
 	//m_unitType = determineUnit();
 }
 
-Unit* ICreateUnit::createUnit(int _soldiers)                          // ÏÎÌÎÃÈ ß ÍÅ ÏÀÍÈÌÀŞ ªÒÀ ÃÀÌÍÎ ¯ÁÀÍÅ
+Unit* ICreateUnit::createUnit(int _soldiers)                          // I DONT UNDERSTANT THIS GAMNO YOBANOE POMOGI VLAD
 {
 	if (_soldiers >= 6 && _soldiers <= 12)
 	{

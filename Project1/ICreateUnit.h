@@ -5,7 +5,7 @@
 #include "Echelon.h"
 #include "Company.h"
 
-class ICreateUnit {                                     // онлнцх ъ ме оюмхлюч ╙рю цюлмн ╞аюме
+class ICreateUnit {                                     // I DONT UNDERSTANT THIS GAMNO YOBANOE POMOGI VLAD
 public:
     static Unit* createUnit(int soldiersCount);
 };
